@@ -1,0 +1,77 @@
+<!DOCTYPE html "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head prefix="og: http://ogp.me/ns# fb: http://www.facebook.com/2008/fbml">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>〜安心して下さい。保存してないですよ。〜マイナンバーが素数かどうかチェックできるサイト</title>
+    <meta name="description" content="〜安心して下さい。保存してないですよ。〜マイナンバーが素数かどうか安心してチェックできるサイト">
+    <meta name="keywords" content="素数,とにかく明るい安村,マイナンバー">
+    <meta property="og:title" content="安心して下さい。保存してないですよ。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://nabettu.github.io/sosu">
+    <meta property="og:image" content="http://nabettu.github.io/sosu/ogp.png">
+    <meta property="og:site_name" content="安心して下さい。保存してないですよ。">
+    <meta property="og:description" content="マイナンバーが素数かどうか安心してチェックできるサイト">
+    <meta property="fb:app_id" content="656603347814327">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="安心して下さい。保存してないですよ。">
+    <meta name="twitter:description" content="マイナンバーが素数かどうか安心してチェックできるサイト">
+    <meta name="twitter:image" content="http://nabettu.github.io/sosu/ogp.png">
+    <meta name="twitter:site" content="http://nabettu.github.io/sosu">
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+    <script src="jquery.min.js"></script>
+</head>
+
+<body>
+    <h1>マイナンバーが素数かどうか安心してチェックできるサイト</h1>
+    <p>※サーバーで情報保存してたり、しないですよ。</p>
+
+    <form id="forms">
+        <input type="number" id="inputNum" placeholder="123456789012" />
+        <button id="submitBtn">判定</button>
+    </form>
+
+    <div class="messageArea">
+        <div class="img">
+            <p id="koe">安心して
+                <br>ください。
+                <span id="answer">素数</span>ですよ。
+            </p>
+        </div>
+    </div>
+
+    <p>シェアしてくれても。いいんですよ。</p>
+    <div class="shareArea">
+        <div class="fb-like" data-href="http://nabettu.github.io/sosu" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://nabettu.github.io/sosu" data-text="〜安心して下さい。保存してないですよ。〜マイナンバーが素数かどうか安心してチェックできるサイト #安心して下さい #マイナンバー" data-count="none">Tweet</a>
+    </div>
+
+    <script src="script.js" type="text/javascript"></script>
+
+    <script>
+        ! function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0],
+                p = /^http:/.test(d.location) ? 'http' : 'https';
+            if (!d.getElementById(id)) {
+                js = d.createElement(s);
+                js.id = id;
+                js.src = p + '://platform.twitter.com/widgets.js';
+                fjs.parentNode.insertBefore(js, fjs);
+            }
+        }(document, 'script', 'twitter-wjs');
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.4&appId=1662537647298063";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+</body>
+
+</html>

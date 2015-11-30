@@ -5,8 +5,8 @@ $("#submitBtn").on("click", function() {
 })
 
 $("#chikubi").on("click", function() {
-    $(".img").addClass("up").delay(1000).queue(function(){
-        $(".img").removeClass("up");
+    $(".img").addClass("up").delay(1100).queue(function() {
+        $(".img").removeClass("up").dequeue();
     });
 })
 
@@ -17,6 +17,10 @@ $("#forms").on("submit", function() {
 
 function check() {
     $(".img").hide().fadeIn();
+    if($("#inputNum").val() == ""){
+        $("#answer").text("色々nullnull");
+        return;
+    }
     if (isPrime($("#inputNum").val())) {
         $("#answer").text("素数");
     } else {

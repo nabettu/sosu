@@ -4,6 +4,12 @@ $("#submitBtn").on("click", function() {
     check();
 })
 
+$("#chikubi").on("click", function() {
+    $(".img").addClass("up").delay(1000).queue(function(){
+        $(".img").removeClass("up");
+    });
+})
+
 $("#forms").on("submit", function() {
     check();
     return false;

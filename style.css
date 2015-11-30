@@ -58,4 +58,5 @@ button {
 }
 .fb-like {
     position: relative;
+    top:-6px;
 }

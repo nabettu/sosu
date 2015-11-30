@@ -9,10 +9,6 @@ $("#forms").on("submit", function() {
     return false;
 })
 
-if (/iphone|ipad|ipod|android/.test(navigator.userAgent.toLowerCase())) {
-    $(".fb-like").css("top", "-6px");
-}
-
 function check() {
     $(".img").hide().fadeIn();
     if (isPrime($("#inputNum").val())) {
